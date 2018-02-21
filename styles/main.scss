@@ -1,0 +1,104 @@
+$main-yellow: #fad802;
+$main-blue: #05b8bc;
+$main-green: #b9d575;
+$secondary-navy: #154168;
+$secondary-grey: #525352;
+
+@mixin btn {
+  background-color: #05b8bc;
+  color: #fff;
+  padding: 0px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "proxima-nova", sans-serif;
+  letter-spacing: .3px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ------------------------------------------Header Styles ------------------------------------------*/
+
+.top-yellow-bar {
+  background-color: $main-yellow;
+  font-size: .85em;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+
+.address, .social {
+  margin: 0% 10% 0% 10%;
+}
+
+.social-icon {
+  max-width: 25px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------Navigation ------------------------------------------*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  ul {
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10%;
+  }
+
+  li {
+    padding: 10px 25px 10px 25px;
+    display: inline-block;
+    font-size: .85em;
+  }
+
+  .nav_menuitem:hover {
+    color: $main-blue;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+}
+
+#nav_logo {
+  height: 100px;
+  margin-left: 10%;
+}
+
+.register-now-btn {
+  @include btn;
+  font-weight: bold;
+}
+
+.register-now-btn:hover {
+  color: $secondary-navy;
+}
+
+/* ------------------------------------------Slideshow ------------------------------------------*/
+
+.slideshow img{
+  width: 100%;
+}
+
+/* ------------------------------------------intro ------------------------------------------*/
+
+.intro {
+  background-color: $main-blue;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.intro_column {
+}
