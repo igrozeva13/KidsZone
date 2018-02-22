@@ -3,11 +3,41 @@ html, body {
   padding: 0;
   font-size: 16px;
   font-family: "proxima-nova", sans-serif;
-  letter-spacing: .3px; }
+  letter-spacing: .3px;
+  color: #525352;
+  background-color: #e9ecef; }
+
+.site {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(41, 70, 97, 0.2); }
+
+.main-btn {
+  background-color: #05b8bc;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold; }
+
+.main-btn:hover {
+  color: #154168; }
 
 a {
-  text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  text-decoration: none !important; }
+
+h1 {
+  color: #154168; }
+
+h2 {
+  color: white;
+  font-size: 1.2em; }
+
+.horizontal-rule {
+  width: 80px;
+  border: 0;
+  border-top: 5px solid #fad802; }
 
 /* ------------------------------------------Header Styles ------------------------------------------*/
 .top-yellow-bar {
@@ -17,13 +47,17 @@ a {
   display: -webkit-flex;
   justify-content: space-between; }
 
-.address, .social {
-  margin: 0% 10% 0% 10%; }
+.address {
+  margin: 18px 10% 2px 10%; }
+  .address a:hover {
+    color: #05b8bc; }
+
+.social {
+  margin: 10px 9% 0px 10%; }
 
 .social-icon {
-  max-width: 25px;
-  padding-right: 10px;
-  margin-top: 10px; }
+  max-width: 40px;
+  padding-right: 10px; }
 
 /* ------------------------------------------Navigation ------------------------------------------*/
 .nav {
@@ -34,9 +68,11 @@ a {
   .nav ul {
     list-style: none;
     margin-top: 30px;
-    margin-right: 10%; }
+    margin-right: 9%;
+    position: relative;
+    display: inline-block; }
   .nav li {
-    padding: 10px 25px 10px 25px;
+    padding: 10px 20px 10px 20px;
     display: inline-block;
     font-size: .85em; }
   .nav .nav_menuitem:hover {
@@ -44,19 +80,42 @@ a {
     font-weight: bold;
     letter-spacing: 0; }
 
+.nav::before, .nav::after {
+  content: none; }
+
+.selected {
+  color: #05b8bc;
+  font-weight: bold;
+  letter-spacing: 0;
+  border-bottom: 1.5px solid #fad802; }
+
 #nav_logo {
   height: 100px;
   margin-left: 10%; }
 
-.register-now-btn {
-  background-color: #05b8bc;
-  color: #fff;
-  padding: 0px;
-  font-weight: bold; }
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  position: absolute;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  .dropdown-content a {
+    padding: 15px;
+    min-width: 200px;
+    display: block; }
+  .dropdown-content a:hover {
+    color: #05b8bc;
+    font-weight: bold;
+    letter-spacing: 0;
+    background-color: #e9ecef; }
 
-.register-now-btn:hover {
-  color: #154168; }
+.dropbtn:hover .dropdown-content {
+  display: block; }
 
+/* ------------------------------------------Mobile Nav ------------------------------------------*/
+@media only screen and (max-width: 85.375em) {
+  .nav {
+    display: none; } }
 /* ------------------------------------------Slideshow ------------------------------------------*/
 .slideshow img {
   width: 100%; }
@@ -64,9 +123,59 @@ a {
 /* ------------------------------------------intro ------------------------------------------*/
 .intro {
   background-color: #05b8bc;
+  text-align: center; }
+  .intro .col-sm-4 {
+    padding: 50px; }
+  .intro a {
+    color: white; }
+  .intro a:hover {
+    color: #154168; }
+
+/* ------------------------------------------welcome ------------------------------------------*/
+.welcome {
+  margin: 3% 10% 3% 10%;
+  text-align: center; }
+  .welcome p {
+    margin: 0% 10% 0% 10%;
+    padding: 20px 20px 40px 20px; }
+
+.pillars {
+  margin: 3% 10% 3% 10%; }
+
+.pillars-row {
   display: flex;
-  justify-content: space-evenly;
-  padding-left: 10%;
-  padding-right: 10%; }
+  justify-content: center; }
+
+.pillar-item {
+  text-align: left;
+  display: flex;
+  width: 45%;
+  padding: 20px; }
+
+.pillar-icon {
+  height: 150px;
+  padding: 0px 20px 0px 20px; }
+
+/* ------------------------------------------subscribe ------------------------------------------*/
+.subscribe {
+  background-color: #b9d575;
+  text-align: center;
+  padding: 50px 0px 50px 0px; }
+  .subscribe p {
+    margin-bottom: 50px; }
+
+/* ------------------------------------------Events ------------------------------------------*/
+.events {
+  margin: 3% 10% 3% 10%;
+  display: flex;
+  justify-content: space-between; }
+
+/* ------------------------------------------footer ------------------------------------------*/
+.footer {
+  background-color: #154168;
+  height: 200px; }
+  .footer p {
+    text-align: center;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
