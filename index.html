@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/xtn4cos.css">
   </head>
@@ -33,7 +34,7 @@
     <img id="nav_logo" src="img/Logo_blacksub.png" alt="KidsZone Logo">
     <ul class="nav_bar">
       <li class="selected"><a class="nav_menuitem" href="#">HOME</a></li>
-      <li class="dropdown dropbtn"><a class="nav_menuitem" href="#">ABOUT US</a>
+      <li class="dropdown dropbtn "><a class="nav_menuitem" href="#">ABOUT US</a>
         <div class="dropdown-content">
             <a href="#">OUR STAFF</a>
             <a href="#">CAREERS</a>
@@ -51,6 +52,34 @@
       <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2"><li class="main-btn">REGISTER NOW</li></a>
     </ul>
   </div>
+
+  <!-- Mobile Nav --------------------------------------->
+  <div class="mobile_nav">
+    <img id="mobile_nav_logo" src="img/Logo_blacksub.png" alt="KidsZone Logo">
+    <div id="sideNav" class="mobile_sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="mobile_nav_menuitem">HOME</a>
+      <a href="#" class="mobile_nav_menuitem dropdown">ABOUT US</a>
+        <div class="mobile_dropdown_content">
+            <a href="#">OUR STAFF</a>
+            <a href="#">CAREERS</a>
+            <a href="#">CONTACT US</a>
+          </div>
+      <a href="#" class="mobile_nav_menuitem dropdown">OUR SPACE</a>
+        <div class="mobile_dropdown_content">
+            <a href="#">OUR RATES</a>
+            <a href="#">INSIDE KIDSZONE</a>
+            <a href="#">BIRTHDAY PARTIES</a>
+          </div>
+      <a href="#" class="mobile_nav_menuitem">GET STARTED</a>
+      <a href="#" class="mobile_nav_menuitem">FAQ</a>
+      <a href="#" class="mobile_nav_menuitem">EVENTS</a>
+      <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2" class="mobile_nav_menuitem"><strong>REGISTER NOW</strong></a>
+    </div>
+    <span onclick="openNav()">open</span>
+  </div>
+
+
 
   <!-- Slideshow -------------------------------------------------------------------------------------------------------->
   <div class="slideshow">
@@ -148,5 +177,15 @@
     <p><a href="www.inagrozeva.com">Developed by Ina Grozeva</a></p>
   </div>
 </div>
+
+  <script type="text/javascript">
+    function openNav() {
+        document.getElementById("sideNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("sideNav").style.width = "0";
+      }
+  </script>
   </body>
 </html>
