@@ -55,18 +55,21 @@
 
   <!-- Mobile Nav --------------------------------------->
   <div class="mobile_nav">
-    <img id="mobile_nav_logo" src="img/Logo_blacksub.png" alt="KidsZone Logo">
+    <div class="logo-row">
+      <img id="mobile_nav_logo" src="img/Logo_blacksub.png" alt="KidsZone Logo">
+      <span onclick="openNav()"><img src="img/dropdown-btn.png" class="dropdown-btn" alt="dropdown btn"></span>
+    </div>
     <div id="sideNav" class="mobile_sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="#" class="mobile_nav_menuitem">HOME</a>
-      <a href="#" class="mobile_nav_menuitem dropdown">ABOUT US</a>
-        <div class="mobile_dropdown_content">
+      <a href="#" class="mobile_nav_menuitem dropdown-1">  ABOUT US &nbsp; &#9656; </a>
+        <div class="mobile_submenu-1">
             <a href="#">OUR STAFF</a>
             <a href="#">CAREERS</a>
             <a href="#">CONTACT US</a>
           </div>
-      <a href="#" class="mobile_nav_menuitem dropdown">OUR SPACE</a>
-        <div class="mobile_dropdown_content">
+      <a href="#" class="mobile_nav_menuitem dropdown-2"> OUR SPACE &nbsp; &#9656; </a>
+        <div class="mobile_submenu-2">
             <a href="#">OUR RATES</a>
             <a href="#">INSIDE KIDSZONE</a>
             <a href="#">BIRTHDAY PARTIES</a>
@@ -76,10 +79,8 @@
       <a href="#" class="mobile_nav_menuitem">EVENTS</a>
       <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2" class="mobile_nav_menuitem"><strong>REGISTER NOW</strong></a>
     </div>
-    <span onclick="openNav()">open</span>
+
   </div>
-
-
 
   <!-- Slideshow -------------------------------------------------------------------------------------------------------->
   <div class="slideshow">
@@ -108,7 +109,7 @@
   <!-- Welcome -------------------------------------------------------------------------------------------------------->
   <div class="welcome">
     <h1>WELCOME TO KIDSZONE</h1>
-    <hr class="horizontal-rule">
+    <hr class="hr-rule">
     <p>Reinventing Childcare. There are a lot of things we are doing differently from other daycares. The three main differences that help parents get the freedom to do life are Extended Hours, Drop-In, and Hourly Rates.
     <br><br>
     We want childcare to be to be affordable, accessible, trusted and convenient. See inside our space to learn what your child will experience at KidsZone.</p>
@@ -158,9 +159,9 @@
   </div>
   <!-- Events -------------------------------------------------------------------------------------------------------->
   <div class="events">
-    <div class="events-row">
+    <div>
       <h1>UPCOMING EVENTS</h1>
-      <hr align="left" class="horizontal-rule">
+      <hr class="hr-rule"><hr align="left" class="hr-rule-left">
       <p>This is where info would go</p>
     </div>
     <div class="events-row">
@@ -186,6 +187,14 @@
     function closeNav() {
         document.getElementById("sideNav").style.width = "0";
       }
+
+    $(".dropdown-1").click(function() {
+        $(".mobile_submenu-1").slideToggle(500);
+      })
+
+    $(".dropdown-2").click(function() {
+          $(".mobile_submenu-2").slideToggle(500);
+        })
   </script>
   </body>
 </html>

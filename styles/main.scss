@@ -3,6 +3,8 @@ $main-blue: #05b8bc;
 $main-green: #b9d575;
 $secondary-navy: #154168;
 $secondary-grey: #525352;
+$medium-grey: #e9ecef;
+$light-grey: #f9f9f9;
 
 //Breakpoints
 $bp-small: 48em; //768px
@@ -16,7 +18,7 @@ html,body {
   font-family: "proxima-nova", sans-serif;
   letter-spacing: .3px;
   color: $secondary-grey;
-  background-color: #e9ecef;
+  background-color: $medium-grey;
 }
 
 .site {
@@ -56,12 +58,11 @@ h2 {
   font-size: 1.2em;
 }
 
-.horizontal-rule {
+.hr-rule, .hr-rule-left {
   width: 80px;
   border: 0;
   border-top: 5px solid $main-yellow;
 }
-
 
 /* ------------------------------------------Header Styles ------------------------------------------*/
 
@@ -74,7 +75,7 @@ h2 {
 }
 
 .address{
-  margin: 18px 10% 2px 10%;
+  margin: 18px 0% 2px 10%;
 
   a:hover {
     color: $main-blue;
@@ -88,6 +89,13 @@ h2 {
 .social-icon {
   max-width: 40px;
   padding-right: 10px;
+}
+
+/* -------------------Mobile Head -------------------*/
+@media only screen and (max-width: $bp-medium) {
+  .top-yellow-bar {
+    display: none;
+  }
 }
 
 /* ------------------------------------------Navigation ------------------------------------------*/
@@ -147,7 +155,7 @@ h2 {
 
 .dropdown-content {
   display: none;
-  background-color: #f9f9f9;
+  background-color: $light-grey;
   position: absolute;
   margin-top: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -162,7 +170,7 @@ h2 {
     color: $main-blue;
     font-weight: bold;
     letter-spacing: 0;
-    background-color: #e9ecef;
+    background-color: $medium-grey;
   }
 }
 
@@ -177,8 +185,25 @@ h2 {
     display: none;
   }
 
+  .logo-row {
+    display: flex;
+    justify-content: space-between;
+    span {
+      margin-right: 10%;
+      margin-top: 50px;
+    }
+  }
+
   #mobile_nav_logo {
-    max-width: 50%;
+  height: 80px;
+  margin-left: 10%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+  .dropdown-btn {
+    width: 30px;
+    height: 20px;
   }
 
   .mobile_sidenav {
@@ -188,17 +213,19 @@ h2 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e9ecef;
+    background-color: $medium-grey;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: .5s;
+    transition: .3s;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
 
     a {
-        transition: 0.3s;
+        transition: 0.5s;
         padding: 10px;
         display: block;
+        padding-left: 20px;
+        border-bottom: solid .5px white;
     }
 
     a:hover {
@@ -207,12 +234,12 @@ h2 {
 
   }
 
-  .mobile_dropdown_content {
+  .mobile_submenu-1, .mobile_submenu-2 {
     display: none;
-  }
-
-  .dropdown:hover .mobile_dropdown_content{
-    display: block;
+    a {
+      background-color: $light-grey;
+      padding-left: 40px;
+    }
   }
 
   .closebtn {
@@ -221,29 +248,34 @@ h2 {
     right: 25px;
     margin-left: 50px;
     font-size: 2em;
+    border-bottom: none !important;
   }
-
 
 }
 
 
 /* ------------------------------------------Slideshow ------------------------------------------*/
-
+@media only screen and (min-width: $bp-small) {
 .slideshow {
   img{
   width: 100%;
 }}
+}
 
+/* ------------Mobile Slideshow ---------*/
+
+@media only screen and (max-width: $bp-small) {
+.slideshow {
+  img{
+  width: 100%;
+}}
+}
 
 /* ------------------------------------------intro ------------------------------------------*/
 
 .intro {
   background-color: $main-blue;
   text-align: center;
-
-  .col-sm-4 {
-    padding: 50px;
-  }
 
   a {
     color: white;
@@ -254,38 +286,92 @@ h2 {
   }
 }
 
-
-/* ------------------------------------------welcome ------------------------------------------*/
-.welcome {
-  margin:  3% 10% 3% 10%;
-  text-align: center;
-
-  p {
-    margin: 0% 10% 0% 10%;
-    padding: 20px 20px 40px 20px;
+@media only screen and (min-width: $bp-medium) {
+  .intro-column {
+    padding: 50px;
   }
 }
 
-.pillars {
-  margin:  3% 10% 3% 10%;
+/* -------------------tablet intro ----------------------*/
+@media only screen and (max-width: $bp-medium) {
+  .intro-column {
+    padding: 20px;
+  }
 }
 
-.pillars-row {
-  display: flex;
-  justify-content: center;
+/* -------------------mobile intro ----------------------*/
+@media only screen and (max-width: $bp-small) {
+  .intro-column {
+    border-bottom: solid white .25px;
+    h2 {
+      margin: 0px !important;
+      padding-bottom: 10px;
+    }
+  }
 }
 
-.pillar-item {
-  text-align: left;
-  display: flex;
-  width: 45%;
-  padding: 20px;
+/* ------------------------------------------welcome ------------------------------------------*/
+
+.welcome {
+  text-align: center;
+  p {
+    padding: 20px 20px 40px 20px;
+  }
+}
+@media only screen and (min-width: $bp-large) {
+  .pillars {
+    margin:  3% 10% 3% 10%;
+  }
 }
 
-.pillar-icon {
-  height: 150px;
-  padding: 0px 20px 0px 20px;
+@media only screen and (min-width: $bp-medium) {
+  .welcome {
+    margin:  3% 10% 3% 10%;
+  }
+
+  .pillars-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pillar-item {
+    text-align: left;
+    display: flex;
+    width: 45%;
+    padding: 20px;
+  }
+
+  .pillar-icon {
+    height: 150px;
+    padding: 0px 20px 0px 20px;
+  }
 }
+
+/* -------------------tablet welcome ----------------------*/
+@media only screen and (max-width: $bp-medium) {
+  .pillars {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .pillar-item {
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  .pillar-icon {
+    height: 120px;
+    padding: 0px 20px 0px 20px;
+  }
+
+}
+
 
 /* ------------------------------------------subscribe ------------------------------------------*/
 
@@ -298,14 +384,33 @@ h2 {
   }
 }
 /* ------------------------------------------Events ------------------------------------------*/
-.events {
-  margin: 3% 10% 3% 10%;
-  display: flex;
-  justify-content: space-between;
+@media only screen and (min-width: $bp-medium) {
+  .events {
+    margin: 3% 10% 3% 10%;
+    display: flex;
+    justify-content: space-between;
+    .hr-rule {
+      display: none;
+    }
+  }
 }
 
-.events-row {
-
+@media only screen and (max-width: $bp-medium) {
+  .events {
+    margin: 3% 10% 3% 10%;
+    h1, p {
+      text-align: center;
+    }
+    .events-row {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .hr-rule-left {
+      display: none;
+    }
+  }
 }
 
 /* ------------------------------------------footer ------------------------------------------*/
