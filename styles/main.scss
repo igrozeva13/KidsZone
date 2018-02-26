@@ -58,10 +58,27 @@ h2 {
   font-size: 1.2em;
 }
 
+h3 {
+  color: white;
+  font-size: 2.7em;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
 .hr-rule, .hr-rule-left {
   width: 80px;
   border: 0;
   border-top: 5px solid $main-yellow;
+}
+
+.hr-divider {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* ------------------------------------------Header Styles ------------------------------------------*/
@@ -253,6 +270,40 @@ h2 {
 
 }
 
+/* ------------------------------------------Interior Page Banner -----------------------------*/
+
+.page-banner {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+
+/* ------------------------------------------footer ------------------------------------------*/
+
+.footer {
+  background-color: $secondary-navy;
+  height: 200px;
+  p {
+    text-align: center;
+    color: white;
+}
+  a:hover {
+    color: $main-blue;
+  }
+}
+
+
+
+
+///////////////////////////// Home Page /////////////////////////
+
+
 
 /* ------------------------------------------Slideshow ------------------------------------------*/
 @media only screen and (min-width: $bp-small) {
@@ -422,16 +473,32 @@ h2 {
   }
 }
 
-/* ------------------------------------------footer ------------------------------------------*/
 
-.footer {
-  background-color: $secondary-navy;
-  height: 200px;
-  p {
-    text-align: center;
-    color: white;
-}
-  a:hover {
-    color: $main-blue;
+/////////////////////////////////////////////// About Us ///////////////////////////////////
+
+.about-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  h1, p {
+    text-align: center; }
+  h4 {
+    padding-bottom: 20px;
+    }
+  a {
+    margin-top: 20px;
   }
+  .centered-btn {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.about-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-photo img{
+  width: 100%;
+  padding: 10px;
 }
