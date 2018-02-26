@@ -303,6 +303,7 @@ h2 {
 @media only screen and (max-width: $bp-small) {
   .intro-column {
     border-bottom: solid white .25px;
+    padding: 40px 20px 40px 20px;
     h2 {
       margin: 0px !important;
       padding-bottom: 10px;
@@ -324,6 +325,7 @@ h2 {
   }
 }
 
+/* -------------------tablet welcome ----------------------*/
 @media only screen and (min-width: $bp-medium) {
   .welcome {
     margin:  3% 10% 3% 10%;
@@ -347,8 +349,13 @@ h2 {
   }
 }
 
-/* -------------------tablet welcome ----------------------*/
+/* -------------------mobile welcome ----------------------*/
 @media only screen and (max-width: $bp-medium) {
+  .welcome {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
   .pillars {
     width: 100%;
     margin-top: 50px;
@@ -360,6 +367,8 @@ h2 {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 75px;
+    margin-top: 75px;
     h1 {
       font-size: 2em;
     }
@@ -378,7 +387,7 @@ h2 {
 .subscribe {
   background-color: $main-green;
   text-align: center;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 35px 50px 35px;
   p {
     margin-bottom: 50px;
   }
@@ -397,7 +406,7 @@ h2 {
 
 @media only screen and (max-width: $bp-medium) {
   .events {
-    margin: 3% 10% 3% 10%;
+    margin: 100px 10% 100px 10%;
     h1, p {
       text-align: center;
     }

@@ -8,4 +8,8 @@ $(document).ready(function(){
       document.getElementById("sideNav").style.width = "0";
     }
 
+  $(".dropdown").click(function() {
+    $(".mobile_submenu").toggle();
+  })
+
 });

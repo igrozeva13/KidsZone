@@ -206,7 +206,8 @@ h2 {
 /* -------------------mobile intro ----------------------*/
 @media only screen and (max-width: 48em) {
   .intro-column {
-    border-bottom: solid white .25px; }
+    border-bottom: solid white .25px;
+    padding: 40px 20px 40px 20px; }
     .intro-column h2 {
       margin: 0px !important;
       padding-bottom: 10px; } }
@@ -219,6 +220,7 @@ h2 {
 @media only screen and (min-width: 85.375em) {
   .pillars {
     margin: 3% 10% 3% 10%; } }
+/* -------------------tablet welcome ----------------------*/
 @media only screen and (min-width: 62em) {
   .welcome {
     margin: 3% 10% 3% 10%; }
@@ -236,8 +238,12 @@ h2 {
   .pillar-icon {
     height: 150px;
     padding: 0px 20px 0px 20px; } }
-/* -------------------tablet welcome ----------------------*/
+/* -------------------mobile welcome ----------------------*/
 @media only screen and (max-width: 62em) {
+  .welcome {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+
   .pillars {
     width: 100%;
     margin-top: 50px;
@@ -247,7 +253,9 @@ h2 {
     text-align: center;
     width: 75%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 75px;
+    margin-top: 75px; }
     .pillar-item h1 {
       font-size: 2em; }
 
@@ -258,7 +266,7 @@ h2 {
 .subscribe {
   background-color: #b9d575;
   text-align: center;
-  padding: 50px 0px 50px 0px; }
+  padding: 50px 35px 50px 35px; }
   .subscribe p {
     margin-bottom: 50px; }
 
@@ -272,7 +280,7 @@ h2 {
       display: none; } }
 @media only screen and (max-width: 62em) {
   .events {
-    margin: 3% 10% 3% 10%; }
+    margin: 100px 10% 100px 10%; }
     .events h1, .events p {
       text-align: center; }
     .events .events-row {
