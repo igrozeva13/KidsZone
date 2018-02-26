@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://use.typekit.net/xtn4cos.css");
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KidsZone Upstate</title>
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xtn4cos.css">
+  </head>
+  <body>
+<div id="page" class="site">
+
+  <!-- Header -------------------------------------------------------------------------------------------------------->
+  <div class="top-yellow-bar">
+    <div class="address">
+          <p>21 Orchard Park Drive, Greenville, SC 29615  &nbsp;  &nbsp; | &nbsp;  &nbsp; <a href="mailto:info@kidszoneupstate.com?Subject=Hello" target="_top">info@kidszoneupstate.com</a> &nbsp;  &nbsp;   |   &nbsp;  &nbsp;<a href="tel:864-263-3895">864.263.3895</a></p>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/kidszoneupstate"><img class="social-icon" src="../img/social-icons-01.png" alt="facebook-icon"></a>
+      <a href="https://www.instagram.com/kidszoneupstate/"><img class="social-icon" src="../img/social-icons-02.png" alt="instagram-icon"></a>
+    </div>
+  </div>
+
+  <!-- Main Nav -------------------------------------------------------------------------------------------------------->
+  <div class="nav">
+    <img id="nav_logo" src="../img/Logo_blacksub.png" alt="KidsZone Logo">
+    <ul class="nav_bar">
+      <li ><a class="nav_menuitem" href="../index.html">HOME</a></li>
+      <li class="dropdown dropbtn selected"><a class="nav_menuitem" href="aboutus.html">ABOUT US</a>
+        <div class="dropdown-content">
+            <a href="ourstaff.html">OUR STAFF</a>
+            <a href="careers.html">CAREERS</a>
+            <a href="contact.html">CONTACT US</a>
+          </div></li>
+      <li class=" dropdown dropbtn"><a class="nav_menuitem" href="ourspace.html">OUR SPACE</a>
+          <div class="dropdown-content">
+            <a href="ourrates.html">OUR RATES</a>
+            <a href="inside.html">INSIDE KIDSZONE</a>
+            <a href="birthdays.html">BIRTHDAY PARTIES</a>
+          </div></li>
+      <li><a class="nav_menuitem" href="getstarted.html">GET STARTED</a></li>
+      <li><a class="nav_menuitem" href="FAQ.html">FAQ</a></li>
+      <li><a class="nav_menuitem" href="events.html">EVENTS</a></li>
+      <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2"><li class="main-btn">REGISTER NOW</li></a>
+    </ul>
+  </div>
+
+  <!-- Mobile Nav --------------------------------------->
+  <div class="mobile_nav">
+    <div class="logo-row">
+      <img id="mobile_nav_logo" src="../img/Logo_blacksub.png" alt="KidsZone Logo">
+      <span onclick="openNav()"><img src="../img/dropdown-btn.png" class="dropdown-btn" alt="dropdown btn"></span>
+    </div>
+    <div id="sideNav" class="mobile_sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html" class="mobile_nav_menuitem">HOME</a>
+      <a href="aboutus.html" class="mobile_nav_menuitem dropdown-1">  ABOUT US &nbsp; &#9656; </a>
+        <div class="mobile_submenu-1">
+            <a href="ourstaff.html">OUR STAFF</a>
+            <a href="careers.html">CAREERS</a>
+            <a href="contactus.html">CONTACT US</a>
+          </div>
+      <a href="ourspace.html" class="mobile_nav_menuitem dropdown-2"> OUR SPACE &nbsp; &#9656; </a>
+        <div class="mobile_submenu-2">
+            <a href="ourrates.html">OUR RATES</a>
+            <a href="inside.html">INSIDE KIDSZONE</a>
+            <a href="birthdays.html">BIRTHDAY PARTIES</a>
+          </div>
+      <a href="getstarted.html" class="mobile_nav_menuitem">GET STARTED</a>
+      <a href="FAQ.html" class="mobile_nav_menuitem">FAQ</a>
+      <a href="events.html" class="mobile_nav_menuitem">EVENTS</a>
+      <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2" class="mobile_nav_menuitem"><strong>REGISTER NOW</strong></a>
+    </div>
+
+  </div>
+
+  <!-- Page Title -------------------------------------------------------------------------------------------------------->
+  <div class="page-banner">
+    <h3>OUR STAFF</h3>
+  </div>
+
+  <!-- Footer -------------------------------------------------------------------------------------------------------->
+  <div class="footer">
+    <br><br>
+    <p>All rights reserved	&copy; </p>
+    <p><a href="www.inagrozeva.com">Developed by Ina Grozeva</a></p>
+  </div>
+</div>
+
+  <script type="text/javascript">
+    function openNav() {
+        document.getElementById("sideNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("sideNav").style.width = "0";
+      }
+
+    $(".dropdown-1").click(function() {
+        $(".mobile_submenu-1").slideToggle(500);
+      })
+
+    $(".dropdown-2").click(function() {
+          $(".mobile_submenu-2").slideToggle(500);
+        })
+  </script>
+  </body>
+</html>
