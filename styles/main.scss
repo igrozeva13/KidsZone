@@ -11,6 +11,11 @@ $bp-small: 48em; //768px
 $bp-medium: 62em; //1024px
 $bp-large: 85.375em; //1366px
 
+@mixin margin-main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 html,body {
   margin: 0;
   padding: 0;
@@ -51,6 +56,7 @@ a {
 
 h1 {
   color: $secondary-navy;
+  font-size: 2em;
 }
 
 h2 {
@@ -66,8 +72,16 @@ h3 {
 
 h4 {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 300;
+}
+
+h5 {
+  font-weight: bold;
+  color: $main-blue;
+  font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .hr-rule, .hr-rule-left {
@@ -79,6 +93,10 @@ h4 {
 .hr-divider {
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.bold-text {
+  font-weight: bold;
 }
 
 /* ------------------------------------------Header Styles ------------------------------------------*/
@@ -420,9 +438,6 @@ h4 {
     margin-right: auto;
     margin-bottom: 75px;
     margin-top: 75px;
-    h1 {
-      font-size: 2em;
-    }
   }
 
   .pillar-icon {
@@ -501,4 +516,102 @@ h4 {
 .about-photo img{
   width: 100%;
   padding: 10px;
+}
+
+@media only screen and (max-width: $bp-small) {
+  .about-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/////////////////////////////////////////////// Our Staff ///////////////////////////////////
+
+.staff-member {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  h4 {
+    text-align: left !important;
+  }
+}
+
+.staff-photo {
+  padding-top: 15px;
+  img {
+    width: 100%;
+  }
+}
+
+.grey-background {
+  background-color: $medium-grey;
+}
+
+.staff-questions p {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/////////////////////////////////////////////// Careers ///////////////////////////////////
+
+.careers {
+  @include margin-main;
+  img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.positions-open {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.positions-apply {
+  h4 {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .assessment-btn {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  margin-bottom: 50px;
+}
+
+.perks {
+  margin-bottom: 150px;
+}
+
+.perks-row {
+  margin-bottom: 40px;
+}
+
+.perks-icon {
+  max-width: 70px;
+}
+
+@media only screen and (min-width: $bp-small) {
+  .careers .hr-rule {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .careers {
+    text-align: center;
+    h4 {
+      text-align: center;
+    }
+    .hr-rule-left {
+      display: none;
+    }
+    .perks-row {
+      margin-bottom: 0px;
+    }
+  }
+
 }
