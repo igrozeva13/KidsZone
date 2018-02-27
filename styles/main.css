@@ -213,7 +213,9 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%; }
 
 /* ------------------------------------------footer ------------------------------------------*/
 .footer {
@@ -481,5 +483,35 @@ h5 {
       display: block;
       margin: 20px 0px 20px 0px;
       text-align: center; } }
+.faq {
+  margin-bottom: 100px;
+  margin-top: 100px; }
+  .faq .question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #e9ecef 0.5px;
+    padding-bottom: 10px; }
+  .faq .question:hover {
+    cursor: pointer; }
+  .faq .answer {
+    display: none;
+    padding-top: 10px; }
+  .faq .openbtn {
+    font-size: 1.5em;
+    color: #fad802; }
+  .faq .question-box {
+    margin-bottom: 40px; }
+
+@media only screen and (min-width: 48em) {
+  .faq {
+    margin-left: 20%;
+    margin-right: 20%; } }
+@media only screen and (max-width: 48em) {
+  .faq {
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .openbtn {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

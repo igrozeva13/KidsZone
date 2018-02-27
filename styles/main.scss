@@ -299,6 +299,8 @@ h5 {
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 
@@ -698,5 +700,54 @@ h5 {
       margin: 20px 0px 20px 0px;
       text-align: center;
     }
+  }
+}
+
+/////////////////////////////////////////////// FAQ ///////////////////////////////////
+
+.faq {
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  .question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid $medium-grey .5px;
+    padding-bottom: 10px;
+  }
+
+  .question:hover {
+    cursor: pointer;
+  }
+
+  .answer {
+    display: none;
+    padding-top: 10px;
+  }
+
+  .openbtn {
+    font-size: 1.5em;
+    color: $main-yellow;
+  }
+
+  .question-box {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: $bp-small) {
+  .faq {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+}
+
+@media only screen and (max-width: $bp-small) { //increase margins on mobile
+  .faq {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  .openbtn {
+    display: none;
   }
 }

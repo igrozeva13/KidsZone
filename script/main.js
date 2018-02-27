@@ -8,8 +8,16 @@ $(document).ready(function(){
       document.getElementById("sideNav").style.width = "0";
     }
 
-  $(".dropdown").click(function() {
-    $(".mobile_submenu").toggle();
-  })
+  $(".dropdown-1").click(function() {
+      $(".mobile_submenu-1").slideToggle(500);
+    })
+
+  $(".dropdown-2").click(function() {
+        $(".mobile_submenu-2").slideToggle(500);
+      })
+
+  $(".question").click(function() {
+        $(this).siblings().slideToggle(100);
+      })
 
 });

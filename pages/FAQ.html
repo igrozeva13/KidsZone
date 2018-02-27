@@ -34,7 +34,7 @@
     <img id="nav_logo" src="../img/Logo_blacksub.png" alt="KidsZone Logo">
     <ul class="nav_bar">
       <li ><a class="nav_menuitem" href="../index.html">HOME</a></li>
-      <li class="dropdown dropbtn selected"><a class="nav_menuitem" href="aboutus.html">ABOUT US</a>
+      <li class="dropdown dropbtn"><a class="nav_menuitem" href="aboutus.html">ABOUT US</a>
         <div class="dropdown-content">
             <a href="ourstaff.html">OUR STAFF</a>
             <a href="careers.html">CAREERS</a>
@@ -47,7 +47,7 @@
             <a href="birthdays.html">BIRTHDAY PARTIES</a>
           </div></li>
       <li><a class="nav_menuitem" href="getstarted.html">GET STARTED</a></li>
-      <li><a class="nav_menuitem" href="FAQ.html">FAQ</a></li>
+      <li class="selected"><a class="nav_menuitem" href="FAQ.html">FAQ</a></li>
       <li><a class="nav_menuitem" href="events.html">EVENTS</a></li>
       <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2"><li class="main-btn">REGISTER NOW</li></a>
     </ul>
@@ -84,7 +84,76 @@
 
   <!-- Page Title -------------------------------------------------------------------------------------------------------->
   <div class="page-banner">
-    <h3>OUR STAFF</h3>
+    <h3>FREQUENTLY ASKED QUESTIONS</h3>
+  </div>
+
+  <div class="faq">
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE SNACKS PROVIDED?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. At no additional charge we do provide snacks throughout the day. Our snacks are peanut free.</p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: HOW DO MEALS WORK?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> When you check in you have the option to place a lunch or dinner order. Our meals are delivered by Outback. There is no specific time you need to place the order by. </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: CAN WE BRING OUR OWN FOOD?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. We have refrigerators and microwaves.</p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE YOU A PEANUT FREE FACILITY?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> No. Our snacks are peanut free but the food bought in or order from Outback may not be.</p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: HOW LONG CAN MY KIDS STAY?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> As long as you need. There is no restriction on how long your child stays at KidsZone.</p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: WHAT SECRUITY MEASURES ARE IN PLACE?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> We verify with a picture id at check in and check out. Parents are buzzed into our lobby and kids are buzzed into the center. No one is allowed into the center unless accompanied by a staff member.  </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE IMMUNIZATION RECORDS NEEDED?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. You have 30 days from your first visit to get us these records. We do except immunization exemptions. Learn more about exemption forms <a href="http://www.scdhec.gov/Health/Vaccinations/ExemptionsfromSchoolVaccineRequirements/">here.</a></p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: WHAT IS THE CHILD TO STAFF RATIO?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> In our Nursery (12 weeks to 2 years) it is 1:5. On our floor (3 and up) it is 1:12.</p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE YOUR EMPLOYEES BACKGROUND CHECKED?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. All employees are throughly backgrounded checked.  </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE EMPLOYEES CPR AND FIRST AID TRAINED?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. All employees are required to be CPR and First Aid trained to work at KidsZone. </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: WHAT IF MY CHILD IS CRYING OR GETS HURT?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> We will call you. If your child is crying for longer than 15 minutes or gets hurt we will call you to let you know. </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: ARE CHILDREN SEPARATED BY AGE?</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> Yes. Children 2 years and under are in the nursery room. We have an older kids section for 8 years and up. Our staff keeps an eye on all activities to make sure the kids are having fun and playing appropriately.  </p>
+    </div>
+
+    <div class="question-box">
+      <p class="question"><strong>Q: DO YOU HAVE CAMERAS</strong><span class="openbtn"><strong>&plus;</strong></span></p>
+      <p class="answer"><strong>A:</strong> We will. They are schedule to be installed soon. When they are we will have enough cameras to cover the whole facility. </p>
+    </div>
+
+
   </div>
 
   <!-- Footer -------------------------------------------------------------------------------------------------------->
@@ -110,6 +179,10 @@
 
     $(".dropdown-2").click(function() {
           $(".mobile_submenu-2").slideToggle(500);
+        })
+
+    $(".question").click(function() {
+          $(this).siblings().slideToggle(100);
         })
   </script>
   </body>
