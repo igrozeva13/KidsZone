@@ -9,6 +9,7 @@
     <title>KidsZone Upstate</title>
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHE7Uc5llypxb3Slr3yhEvxARQIDZeTKg&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script/main.js"></script>
@@ -84,7 +85,44 @@
 
   <!-- Page Title -------------------------------------------------------------------------------------------------------->
   <div class="page-banner">
-    <h3>OUR STAFF</h3>
+    <h3>CONTACT US</h3>
+  </div>
+
+  <!-- Contact Information -------------------------------------------------------------------------------------------------------->
+
+  <div class="contact-us container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>OUR ADDRESS</h1>
+        <p>21 Orchard Park Drive<br>
+        Greenville, SC 29615
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h1>PHONE & EMAIL</h1>
+        <p><a href="mailto:info@kidszoneupstate.com?Subject=Hello" target="_top">info@kidszoneupstate.com</a><br>
+        <a href="tel:864-263-3895">(864) 263 - 3895</a>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <h1>BUSINESS HOURS</h1>
+        <p>Mon-Thu: 7:00 am - 10:00pm<br>
+          Friday: 7:00 am - 12:00am<br>
+          Saturday: 10:00 am - 12:00am<br>
+          <a href="birthdays.html">Sunday: Birthday Party Day</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="map">
+
+  </div>
+
+  <div class="subscribe">
+    <h3>SAVE TIME BEFORE YOU VISIT</h3>
+    <h4><i>Register Online and Your First Hour is Free</i></h4>
+    <a href="http://register.staytrak.com/kidszone?pubreg=kdszn.JirXtgR2" class="main-btn"><strong>REGISTER NOW</strong></a>
   </div>
 
   <!-- Footer -------------------------------------------------------------------------------------------------------->
@@ -111,6 +149,18 @@
     $(".dropdown-2").click(function() {
           $(".mobile_submenu-2").slideToggle(500);
         })
-  </script>
+
+    function initMap() {
+            var uluru = {lat: 34.857480, lng: -82.334496};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
   </body>
 </html>
