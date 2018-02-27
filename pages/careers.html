@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script/main.js"></script>
+    <script type="text/javascript" src="../script/main.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/xtn4cos.css">
   </head>
@@ -33,17 +33,19 @@
   <div class="nav">
     <img id="nav_logo" src="../img/Logo_blacksub.png" alt="KidsZone Logo">
     <ul class="nav_bar">
-      <li ><a class="nav_menuitem" href="../index.html">HOME</a></li>
-      <li class="dropdown dropbtn selected"><a class="nav_menuitem" href="aboutus.html">ABOUT US</a>
+      <li><a class="nav_menuitem" href="../index.html">HOME</a></li>
+      <li class="dropdown dropbtn selected"><a class="nav_menuitem" href="#">ABOUT US</a>
         <div class="dropdown-content">
+            <a href="aboutus.html">OUR STORY</a>
             <a href="ourstaff.html">OUR STAFF</a>
             <a href="careers.html">CAREERS</a>
             <a href="contact.html">CONTACT US</a>
           </div></li>
-      <li class=" dropdown dropbtn"><a class="nav_menuitem" href="ourspace.html">OUR SPACE</a>
+      <li class="dropdown dropbtn"><a class="nav_menuitem" href="#">OUR SPACE</a>
           <div class="dropdown-content">
-            <a href="ourrates.html">OUR RATES</a>
-            <a href="inside.html">INSIDE KIDSZONE</a>
+            <a href="ourrates.html">RATES</a>
+            <a href="ourspace.html">THINGS TO DO</a>
+            <a href="inside.html">SEE INSIDE</a>
             <a href="birthdays.html">BIRTHDAY PARTIES</a>
           </div></li>
       <li><a class="nav_menuitem" href="getstarted.html">GET STARTED</a></li>
@@ -62,16 +64,18 @@
     <div id="sideNav" class="mobile_sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="../index.html" class="mobile_nav_menuitem">HOME</a>
-      <a href="aboutus.html" class="mobile_nav_menuitem dropdown-1">  ABOUT US &nbsp; &#9656; </a>
-        <div class="mobile_submenu-1">
+      <a href="#" class="mobile_nav_menuitem dropdown-mobile">  ABOUT US &nbsp; &#9656; </a>
+        <div class="mobile_submenu">
+            <a href="aboutus.html">OUR STORY</a>
             <a href="ourstaff.html">OUR STAFF</a>
             <a href="careers.html">CAREERS</a>
             <a href="contactus.html">CONTACT US</a>
           </div>
-      <a href="ourspace.html" class="mobile_nav_menuitem dropdown-2"> OUR SPACE &nbsp; &#9656; </a>
-        <div class="mobile_submenu-2">
-            <a href="ourrates.html">OUR RATES</a>
-            <a href="inside.html">INSIDE KIDSZONE</a>
+      <a href="#" class="mobile_nav_menuitem dropdown-mobile"> OUR SPACE &nbsp; &#9656; </a>
+        <div class="mobile_submenu">
+            <a href="ourrates.html">RATES</a>
+            <a href="ourspace.html">THINGS TO DO</a>
+            <a href="inside.html">SEE INSIDE</a>
             <a href="birthdays.html">BIRTHDAY PARTIES</a>
           </div>
       <a href="getstarted.html" class="mobile_nav_menuitem">GET STARTED</a>
@@ -190,23 +194,5 @@
     <p><a href="www.inagrozeva.com">Developed by Ina Grozeva</a></p>
   </div>
 </div>
-
-  <script type="text/javascript">
-    function openNav() {
-        document.getElementById("sideNav").style.width = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("sideNav").style.width = "0";
-      }
-
-    $(".dropdown-1").click(function() {
-        $(".mobile_submenu-1").slideToggle(500);
-      })
-
-    $(".dropdown-2").click(function() {
-          $(".mobile_submenu-2").slideToggle(500);
-        })
-  </script>
   </body>
 </html>

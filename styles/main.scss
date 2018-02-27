@@ -219,10 +219,10 @@ h5 {
   .nav{
     display: none;
   }
-
   .logo-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
     span {
       margin-right: 10%;
       margin-top: 50px;
@@ -269,7 +269,7 @@ h5 {
 
   }
 
-  .mobile_submenu-1, .mobile_submenu-2 {
+  .mobile_submenu {
     display: none;
     a {
       background-color: $light-grey;
@@ -288,20 +288,29 @@ h5 {
 
 }
 
+@media only screen and (max-width: $bp-medium) {
+  .logo-row {
+    margin-top: 0px !important;
+  }
+}
+
 /* ------------------------------------------Interior Page Banner -----------------------------*/
 
 .page-banner {
   background-image: url(../img/banner.jpg);
   background-size: cover;
-  height: 150px;
+  height: 175px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  margin-top: 0px;
   padding-left: 10%;
   padding-right: 10%;
 }
+
+
 
 
 /* ------------------------------------------footer ------------------------------------------*/
