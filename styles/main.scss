@@ -645,8 +645,8 @@ h5 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    padding-left: 10px;
-    padding-top: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   h4 {
     text-align: left;
@@ -656,9 +656,12 @@ h5 {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .row {
+    margin-bottom: 20px;
+  }
 }
 
-@media only screen and (min-width: $bp-small) {
+@media only screen and (min-width: $bp-medium) {
   .form-btns {
     display: block;
     margin: 30px 0px 30px 0px;
@@ -666,9 +669,28 @@ h5 {
       margin: 0px 30px 0px 0px;
     }
   }
+
+  .get-started  .hr-rule {
+      display: none;
+    }
+
+  .step-two-icon {
+    margin-top: 50%;
+  }
 }
 
-@media only screen and (max-width: $bp-small) {
+@media only screen and (max-width: $bp-medium) {
+  .get-started {
+    text-align: center;
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .hr-rule-left {
+    display: none;
+  }
+
   .form-btns {
     margin: 30px 0px 30px 0px;
     a {
