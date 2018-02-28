@@ -656,6 +656,131 @@ h5 {
   height: 400px;
 }
 
+/////////////////////////////////////////////// Our Space (Things to Do) ///////////////////////////////////
+
+.play {
+  @include margin-main;
+  text-align: center;
+  img {
+    max-height: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    padding-bottom: 20px;
+    font-size: 1.7em;
+  }
+  .col-sm-4 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+.nursery {
+  @include margin-main;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  img {
+    width: 100%;
+    padding-right: 25px;
+  }
+  h4 {
+    text-align: left;
+  }
+  h5 {
+    font-style: oblique;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .checkmark {
+    color: $main-yellow;
+    padding-right: 15px;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: $bp-small) {
+  .nursery .hr-rule {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .nursery {
+    text-align: center;
+    h4 {
+      text-align: center;
+    }
+    .hr-rule-left {
+      display: none;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+  }
+}
+/////////////////////////////////////////////// Rates ///////////////////////////////////
+.rates-page {
+  @include margin-main;
+  text-align: center;
+  .row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.rates-drop {
+  img {
+    max-height: 150px;
+  }
+  .col-sm-3 p {
+    font-size: 1.2em;
+    padding-bottom: 40px;
+  }
+  .col-sm-3 h1 {
+    font-size: 1.5em;
+  }
+}
+
+.rates-day {
+  .row {
+    .col-sm-4 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.3em;
+    }
+}
+}
+
+.rates-bulk {
+  margin-top: 100px;
+  .box {
+    border: .25px solid $secondary-grey;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    hr {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+  .box-head {
+    color: white;
+    font-weight: bold;
+    background-color: $secondary-navy;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 /////////////////////////////////////////////// Get Started ///////////////////////////////////
 
 .get-started {
@@ -704,10 +829,9 @@ h5 {
     h4 {
       text-align: center;
     }
-  }
-
-  .hr-rule-left {
-    display: none;
+    .hr-rule-left {
+      display: none;
+    }
   }
 
   .form-btns {
@@ -749,6 +873,10 @@ h5 {
 
   .question-box {
     margin-bottom: 40px;
+  }
+
+  .grey-text {
+    color: lighten($secondary-grey, 15%);
   }
 }
 
