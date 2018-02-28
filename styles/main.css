@@ -539,6 +539,41 @@ h5 {
     padding-top: 10px;
     padding-bottom: 10px; }
 
+.events-page {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  margin-top: 50px; }
+  .events-page img {
+    width: 100%;
+    padding-right: 25px; }
+  .events-page h5 {
+    font-style: oblique;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    text-align: center; }
+  .events-page .checkmark-box {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .events-page .checkmark {
+    color: #fad802;
+    padding-right: 15px;
+    font-size: 1.4em; }
+  .events-page .btn-box {
+    text-align: center; }
+
+@media only screen and (min-width: 48em) {
+  .events-page .hr-rule {
+    display: none; } }
+@media only screen and (max-width: 48em) {
+  .events-page {
+    text-align: center; }
+    .events-page h4 {
+      text-align: center; }
+    .events-page .hr-rule-left {
+      display: none; }
+    .events-page p {
+      padding-bottom: 30px; } }
 .get-started {
   margin-bottom: 150px; }
   .get-started img {

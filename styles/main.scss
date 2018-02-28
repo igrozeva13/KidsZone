@@ -781,6 +781,57 @@ h5 {
   }
 }
 
+/////////////////////////////////////////////// Birthday and Events Pages ///////////////////////////////////
+
+.events-page {
+  @include margin-main;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  img {
+    width: 100%;
+    padding-right: 25px;
+  }
+  h5 {
+    font-style: oblique;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    text-align: center;
+  }
+  .checkmark-box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .checkmark {
+    color: $main-yellow;
+    padding-right: 15px;
+    font-size: 1.4em;
+  }
+  .btn-box {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: $bp-small) {
+  .events-page .hr-rule {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .events-page {
+    text-align: center;
+    h4 {
+      text-align: center;
+    }
+    .hr-rule-left {
+      display: none;
+    }
+    p {
+      padding-bottom: 30px;
+    }
+  }
+}
+
 /////////////////////////////////////////////// Get Started ///////////////////////////////////
 
 .get-started {
