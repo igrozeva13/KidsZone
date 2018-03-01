@@ -126,8 +126,9 @@ h5 {
     border-bottom: 1.5px solid #fad802; }
 
   #nav_logo {
-    height: 100px;
     margin-left: 10%; }
+    #nav_logo img {
+      height: 100px; }
 
   .dropdown-content {
     display: none;
@@ -161,14 +162,16 @@ h5 {
       margin-top: 50px; }
 
   #mobile_nav_logo {
-    height: 80px;
     margin-left: 10%;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-top: 40px; }
+    #mobile_nav_logo img {
+      height: 80px; }
 
   .dropdown-btn {
     width: 30px;
-    height: 20px; }
+    height: 20px;
+    cursor: pointer;
+    margin-top: 20px; }
 
   .mobile_sidenav {
     height: 100%;
@@ -233,13 +236,14 @@ h5 {
     color: #05b8bc; }
 
 /* ------------------------------------------Slideshow ------------------------------------------*/
-@media only screen and (min-width: 48em) {
-  .slideshow img {
-    width: 100%; } }
-/* ------------Mobile Slideshow ---------*/
-@media only screen and (max-width: 48em) {
-  .slideshow img {
-    width: 100%; } }
+.slideshow-container {
+  max-width: 1440px; }
+
+.mySlides {
+  display: none; }
+  .mySlides img {
+    width: 100%; }
+
 /* ------------------------------------------intro ------------------------------------------*/
 .intro {
   background-color: #05b8bc;
@@ -546,7 +550,9 @@ h5 {
   margin-top: 50px; }
   .events-page img {
     width: 100%;
-    padding-right: 25px; }
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px; }
   .events-page h5 {
     font-style: oblique;
     padding-top: 0px !important;

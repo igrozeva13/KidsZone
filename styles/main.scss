@@ -183,8 +183,10 @@ h5 {
 
 
 #nav_logo {
-  height: 100px;
   margin-left: 10%;
+  img {
+  height: 100px;
+}
 }
 
 
@@ -230,15 +232,18 @@ h5 {
   }
 
   #mobile_nav_logo {
-  height: 80px;
-  margin-left: 10%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    margin-left: 10%;
+    margin-top: 40px;
+    img {
+    height: 80px;
+    }
   }
 
   .dropdown-btn {
     width: 30px;
     height: 20px;
+    cursor: pointer;
+    margin-top: 20px;
   }
 
   .mobile_sidenav {
@@ -335,21 +340,16 @@ h5 {
 
 
 /* ------------------------------------------Slideshow ------------------------------------------*/
-@media only screen and (min-width: $bp-small) {
-.slideshow {
-  img{
-  width: 100%;
-}}
-}
+  .slideshow-container {
+    max-width: 1440px;
+  }
 
-/* ------------Mobile Slideshow ---------*/
-
-@media only screen and (max-width: $bp-small) {
-.slideshow {
-  img{
-  width: 100%;
-}}
-}
+  .mySlides {
+    display: none;
+    img{
+    width: 100%;
+    }
+  }
 
 /* ------------------------------------------intro ------------------------------------------*/
 
@@ -790,6 +790,8 @@ h5 {
   img {
     width: 100%;
     padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
   }
   h5 {
     font-style: oblique;
