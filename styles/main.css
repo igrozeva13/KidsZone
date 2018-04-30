@@ -501,6 +501,14 @@ h5 {
       display: none; }
     .nursery p {
       padding-bottom: 30px; } }
+#gallery {
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.gallery-image {
+  width: 300px;
+  padding: 20px; }
+
 .rates-page {
   margin-left: 10%;
   margin-right: 10%;
