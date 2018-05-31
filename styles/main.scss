@@ -396,7 +396,7 @@ h5 {
 .welcome {
   text-align: center;
   p {
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 0px 20px;
   }
 }
 @media only screen and (min-width: $bp-large) {
@@ -469,12 +469,19 @@ h5 {
     margin-bottom: 30px;
   }
 }
-/* ------------------------------------------Events ------------------------------------------*/
+/* ------------------------------------------trusted, enjoyed ------------------------------------------*/
 @media only screen and (min-width: $bp-medium) {
-  .events {
-    margin: 3% 10% 3% 10%;
+  .trusted {
+    margin: 0% 0% 0% 0%;
     display: flex;
     justify-content: space-between;
+    background: $secondary-navy;
+    color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    .intro-column {
+      padding: 20px 40px 20px 40px !important;
+    }
     .hr-rule {
       display: none;
     }
@@ -482,8 +489,12 @@ h5 {
 }
 
 @media only screen and (max-width: $bp-medium) {
-  .events {
-    margin: 100px 10% 100px 10%;
+  .trusted {
+    background: $secondary-navy;
+    margin: 100px 0% 100px 0%;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
     h1, p {
       text-align: center;
     }
@@ -811,11 +822,13 @@ h5 {
     font-style: oblique;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    text-align: center;
+    text-align: left;
   }
   .checkmark-box {
+    font-size: 1.2em;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding-right: 20px;
   }
   .checkmark {
     color: $main-yellow;
