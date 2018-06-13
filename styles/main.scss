@@ -513,7 +513,7 @@ h5 {
 .back-to-top {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 30px;
 
 }
@@ -737,12 +737,19 @@ h5 {
 
 #gallery {
   @include margin-main;
+  margin-bottom: 100px;
+}
+
+#gallery .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .gallery-image {
-  width: 300px;
-  padding: 20px;
-
+  width: 250px;
+  padding: 15px;
+  display: block;
 }
 
 /////////////////////////////////////////////// Rates ///////////////////////////////////
@@ -864,6 +871,7 @@ h5 {
 /////////////////////////////////////////////// Get Started ///////////////////////////////////
 
 .get-started {
+  @include margin-main;
   margin-bottom: 150px;
   img {
     width: 50%;

@@ -358,7 +358,7 @@ h5 {
 .back-to-top {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 30px; }
 
 .about-section {
@@ -513,11 +513,18 @@ h5 {
       padding-bottom: 30px; } }
 #gallery {
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  margin-bottom: 100px; }
+
+#gallery .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .gallery-image {
-  width: 300px;
-  padding: 20px; }
+  width: 250px;
+  padding: 15px;
+  display: block; }
 
 .rates-page {
   margin-left: 10%;
@@ -601,6 +608,8 @@ h5 {
     .events-page p {
       padding-bottom: 30px; } }
 .get-started {
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 150px; }
   .get-started img {
     width: 50%;
